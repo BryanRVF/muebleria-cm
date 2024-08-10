@@ -1,0 +1,180 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #53a0ec;
+    height: 100px; /* Altura fija de la barra */
+    width: 100%;
+    padding: 0 100px; /* Ajusta el padding según necesidades */
+    z-index: 1000;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se desborda */
+} 
+        .logo-img {
+            max-width: 100%;
+            height: 120px;
+
+        }
+      
+        
+        .hero {
+            
+                background-image: url('imagenes/closet1.jpg ');
+                background-size: contain   ; /* Ajusta el tamaño para contener completamente la imagen */
+                background-position: center top; /* Centra la imagen de fondo verticalmente en la parte superior */
+                height: 100vh; /* Usa 100vh para ocupar el alto completo del viewport */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: slide 20s infinite linear;
+                
+            }
+            
+        
+        
+        .hero-text h1 {
+            font-size: 3rem;
+            
+        }
+        
+        .hero-text h2 {
+            font-size: 2rem;
+           
+        }
+        .card-img-top-custom {
+            height: 200px;
+            object-fit: cover;
+        }
+
+      
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  
+    background: #f2f2f2;
+    overflow-x: hidden; 
+   
+    line-height: 1.5em;
+   
+    
+}
+
+/* Estilos para el header (navbar) */
+
+
+.navbar {
+    width: 100%;
+    position: fixed; /* Fija el menú de navegación en la parte superior */
+    z-index: 1100; 
+ top: 100px;
+
+
+
+}
+.navbar img {
+    height: 50px;
+    margin-right: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+  
+    padding: 10px 16px; 
+}
+
+.navbar a:hover {
+    background-color: rgb(204, 37, 101);
+    
+}
+
+/* Estilos para el header (hero) */
+
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: 2000px 0; }
+}
+
+.hero-text {
+    text-align: left;
+    color: white;
+    background-color: rgba(10, 11, 12, 0.884); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero-text p {
+    margin: 10px 0 0;
+}
+
+/* Estilos para la sección de proyectos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 15px;
+}
+
+
+.project img, .card-img-top-custom {
+    max-width: 100%; /* Asegúrate de que no excedan el ancho del contenedor */
+    height: auto;
+}
+/* Estilos para el footer */
+footer.footer {
+    color: white !important; /* Color de la letra */
+    
+    text-align: center;
+    background-color: #212529 !important; /* Color de fondo */
+}
+
+.footer h5 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.parrafo p {
+    margin: 0;
+    margin-right: 10px; /* espacio entre el texto y el icono */
+}
+
+.parrafo {
+    display: flex;
+ 
+    padding: 10px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.projects {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+footer.footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
